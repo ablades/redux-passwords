@@ -23,3 +23,5 @@ const passwordReducer = ( state = [], action) => {
             return state
     }
 }
+
+export default passwordReducer
