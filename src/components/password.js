@@ -11,11 +11,12 @@ class Password extends Component {
       }
 
     generatePassword() {
-        var names = ['Ann', 'Bob', 'Cat', 'Dan'];
+        var names = ['Ann', 'Bob', 'Cat', 'Dan']
         var name = names[this.random(names.length)]
+        var str = 'abcdefghijklmnopqrstuvwxyz'
+        var letter = str[this.random(str.length)]
 
-
-        this.setState({ password: name})
+        this.setState({ password: name + letter})
     }
 
     render() {
